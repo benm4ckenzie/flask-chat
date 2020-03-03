@@ -5,6 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return "<h1>Hello there!</h1>"
+    """Main page with instructions"""
+    return "To send a message, use /USERNAME/MESSAGE"
 
 app.run(host=os.getenv('IP'), port=os.getenv('PORT')), debug-True
